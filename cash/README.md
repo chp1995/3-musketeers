@@ -96,6 +96,7 @@ For example:
 
 
 ##API
+
 ```js
 const API = 'https://api.exchangeratesapi.io/latest';
 ```
