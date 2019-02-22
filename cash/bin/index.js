@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/**
+ * @overview Used by cash.js call, and call constant.js to calculate and return the result
+ * @copyright [Uncopyrighted](http://zenhabits.net/uncopyright/)
+ * @author [Cui Haipeng]代码的作者信息。
+ * @version v2.0
+ */
+
 'use strict';
 
 const Conf = require('conf');
