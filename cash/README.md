@@ -95,7 +95,7 @@ For example:
 </ol>
 
 
-##API
+## API
 
 ```js
 const API = 'https://api.exchangeratesapi.io/latest';
@@ -105,12 +105,12 @@ The return result is a json file like this:
 {"base":"EUR","date":"2019-02-20","rates":{"NZD":1.6513,"CAD":1.4956,"MXN":21.7301,"AUD":1.5844,"CNY":7.6244,"PHP":59.003,"GBP":0.86945,"CZK":25.679,"USD":1.1342,"SEK":10.5703,"NOK":9.7335,"TRY":6.019,"IDR":15924.17,"ZAR":16.0354,"MYR":4.6183,"HKD":8.9026,"HUF":317.33,"ISK":135.7,"HRK":7.4135,"JPY":125.61,"BGN":1.9558,"SGD":1.5326,"RUB":74.5774,"RON":4.7567,"CHF":1.1342,"DKK":7.4614,"INR":80.7035,"KRW":1273.47,"THB":35.268,"BRL":4.2019,"PLN":4.3445,"ILS":4.1004}}
 ```
 
-##Module
-###index.js
+## Module
+### index.js
 The program's entry file is used to parse user commands and feedback
-###constant.js
+### constant.js
 Set the API and set the defaults
-###cash.js
+### cash.js
 Used by cash.js call, and call constant.js to calculate and return the result
 
 ## Licence
