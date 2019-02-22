@@ -94,6 +94,7 @@ For example:
 </li>
 </ol>
 
+
 ##API
 ```js
 const API = 'https://api.exchangeratesapi.io/latest';
