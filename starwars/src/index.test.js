@@ -7,25 +7,53 @@ describe('starwars-names', () => {
       expect(starWars.all).toHaveLength(starWarsNames.length)
     });
     test('should be an array of strings', () => {
-      throw new Error('test not yet defined... remove the throw and write your test here');
+      const result = true;
+      for(x in starWars.all){
+        if(typeof starWars.all[x]!='string'){
+          result=false
+        }
+      }
+      expect(result).toEqual(true)
     });
 
     test('should contain `Luke Skywalker`', () => {
-      throw new Error('test not yet defined... remove the throw and write your test here');
+      var result = false;
+      for(x in starWars.all){
+        if(starWars.all[x] == "Luke Skywalker"){
+          result=true
+        }
+      }
+      expect(result).toEqual(true)
     });
 
     test('should not contain `Ben Quadinaros`', () => {
-      throw new Error('test not yet defined... remove the throw and write your test here');
+      var result = true;
+      for(x in starWars.all){
+        if(starWars.all[x] == "Ben Quadinaros"){
+          result=false
+        }
+      }
+      expect(result).toEqual(true)
     });
   });
 
   describe('random', () => {
     test('should return a random item from the starWars.all', () => {
-      throw new Error('test not yet defined... remove the throw and write your test here');
+      // var result = true;
+      // if(typeof starWars.random() == 'string'){
+      //   result=false
+      // }
+      expect(typeof starWars.random()).toEqual('string')
     });
 
     test('should return an array of random items if passed a number', () => {
-      throw new Error('test not yet defined... remove the throw and write your test here');
+      // var result = true;
+      var rdm = Math.floor((Math.random()*10)+1)
+      // if(typeof starWars.random(rdm) == 'string'){
+      //   result=false
+      // }
+      // expect(result).toEqual(true)
+      expect(starWars.random(rdm).constructor).toEqual(Array)
     });
   });
 });
